@@ -1,3 +1,5 @@
+import com.sun.source.doctree.SummaryTree;
+
 public class Operators {
     public static void main(String[] args) {
         System.out.println("Suma");
@@ -79,9 +81,60 @@ public class Operators {
         else System.out.println("Conditia nu este adevarata");
 
         System.out.println(".........");
-        System.out.println("Exercitiul 1");
+        System.out.println("Exercitii");
+        //Ex1
         System.out.println(10*6);
+        //Ex2
         System.out.println(10/5);
-        
+        //Ex3
+        int x=10;
+        ++x;
+        System.out.println(x); //x=11
+        //Ex4
+        x+=5; //x=16
+        System.out.println(x);
+        //Ex5
+        int y=10;
+        int z=20;
+        int k=y+10;
+        if (k >= 10) {
+            System.out.println("suma este mai mare decat 10");
+        }
+        else System.out.println("suma este mai mica decat 10");
+        //Ex6
+        if (k % 2 == 0) {
+            System.out.println("suma este numar par");
+        }
+
+        System.out.println(".......................");
+        System.out.println("Exercitii optionale");
+        //Ex1
+        int var1=2, var2=5, var3=10, var4=1;
+        System.out.println(var1+var2+var3+var4);
+        System.out.println(var1*var2*var3*var4);
+        System.out.println(var4%var2);
+        //Ex2
+        ++var1;
+        ++var1;
+        ++var1;
+        System.out.println(var1);
+        for(int i=0;i<3;i++){var1++;}
+        System.out.println(var1);
+        //Ex3
+        var2-=2;
+        var2-=2;
+        System.out.println(var2);
+        for (int i=0;i<2;i++){var2-=2;}
+        System.out.println(var2);
+        //Ex4-5
+        boolean cond1=var1+var2+var3+var4>100;
+        boolean cond2=var1*var2*var3*var4>1000;
+        System.out.println(cond1);
+        System.out.println(cond2);
+        System.out.println(cond1||cond2);
+        System.out.println(cond1&&cond2);
+
+
+
     }
 }
